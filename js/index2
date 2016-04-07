@@ -1,0 +1,10 @@
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+
+
+var cityInput = ["Austin", "Los Angeles", "New York City", "San Fransisco", "Sydney"];
+$("#dropdown select").empty();
+for(var i in cityInput) {
+  $("#dropdown select").append('<option value='+i+'>'+city[i]+'</option>');
+}
